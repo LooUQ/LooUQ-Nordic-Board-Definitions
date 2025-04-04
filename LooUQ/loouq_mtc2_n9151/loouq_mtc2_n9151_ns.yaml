@@ -1,0 +1,20 @@
+identifier: loouq_mtc2_n9151/nrf9151/ns
+name: LooUQ-MTC2-N9151-NRF9151-Non-Secure
+type: mcu
+arch: arm
+ram: 128
+flash: 212
+toolchain:
+  - gnuarmemb
+  - xtools
+  - zephyr
+supported:
+  - arduino_gpio
+  - arduino_i2c
+  - arduino_serial
+  - arduino_spi
+  - i2c
+  - pwm
+  - watchdog
+  - netif:modem
+vendor: loouq

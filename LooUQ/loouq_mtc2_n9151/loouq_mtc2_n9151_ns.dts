@@ -1,0 +1,26 @@
+/*
+ * Copyright (c) 2023 Nordic Semiconductor ASA
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Copyright (c) 2025 LooUQ Incorporated
+ */
+
+/dts-v1/;
+#include <nordic/nrf9151ns_laca.dtsi>
+#include "loouq_mtc2_n9151-common.dtsi"
+#include "loouq_mtc2_n9151-pinctrl.dtsi"
+#include "loouq_mtc2_n9151-partitioning.dtsi"
+
+/ {
+	chosen {
+		zephyr,flash = &flash0;
+		zephyr,sram = &sram0_ns;
+		zephyr,code-partition = &slot0_ns_partition;
+	};
+};
+
+/* Disable UART1, because it is used by default in TF-M */
+&uart1 {
+	status = "disabled";
+};
