@@ -22,5 +22,13 @@
 
 /* Disable UART1, because it is used by default in TF-M */
 &uart1 {
-	status = "disabled";
+	status = "ok";
+};
+
+&power {
+    status = "disabled";
+};
+
+&kmu {
+    status = "okay";
 };

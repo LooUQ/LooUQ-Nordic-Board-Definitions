@@ -7,13 +7,8 @@ flash: 1024
 toolchain:
   - zephyr
 supported: 
-  - arduino_gpio
-  - arduino_i2c
-  - arduino_serial
-  - arduino_spi
   - gpio
   - i2c
-  - pwm
   - spi
   - watchdog
   - counter
