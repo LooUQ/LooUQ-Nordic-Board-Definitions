@@ -20,15 +20,19 @@
 	};
 };
 
-/* Disable UART1, because it is used by default in TF-M */
-&uart1 {
-	status = "ok";
-};
+// &uart0 {
+// 	status = "okay";
+// };
 
-&power {
-    status = "disabled";
-};
+// /* Disable UART1, because it is used by default in TF-M */
+// &uart1 {
+// 	status = "okay";
+// };
 
-&kmu {
-    status = "okay";
-};
+// &power {
+//     status = "disabled";
+// };
+
+// &kmu {
+//     status = "okay";
+// };
